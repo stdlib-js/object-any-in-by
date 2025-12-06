@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-29)
+## Unreleased (2025-12-06)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`ed42a4f`](https://github.com/stdlib-js/stdlib/commit/ed42a4f20e80757e6e855dc9ac4e70ab5a28f423) - **docs:** update related packages sections [(#8835)](https://github.com/stdlib-js/stdlib/pull/8835) _(by stdlib-bot)_
 -   [`f03b259`](https://github.com/stdlib-js/stdlib/commit/f03b259e592ffe69c5c59f9f2d2a4a2cba508244) - **docs:** fix missing sections _(by Athan Reines)_
 -   [`4ebdf6c`](https://github.com/stdlib-js/stdlib/commit/4ebdf6c5b911d2bfde819ab56e654a22b9f85133) - **feat:** add `object/any-in-by` _(by Neeraj Pathak)_
 

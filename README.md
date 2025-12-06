@@ -216,6 +216,15 @@ bool = anyInBy( obj, threshold );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/utils-any-by`][@stdlib/utils/any-by]</span><span class="delimiter">: </span><span class="description">test whether at least one element in a collection passes a test implemented by a predicate function.</span>
+-   <span class="package-name">[`@stdlib/object-any-own-by`][@stdlib/object/any-own-by]</span><span class="delimiter">: </span><span class="description">test whether whether any 'own' property of a provided object satisfies a predicate function.</span>
+-   <span class="package-name">[`@stdlib/object-every-in-by`][@stdlib/object/every-in-by]</span><span class="delimiter">: </span><span class="description">test whether all properties (own and inherited) of an object pass a test implemented by a predicate function.</span>
+-   <span class="package-name">[`@stdlib/object-some-in-by`][@stdlib/object/some-in-by]</span><span class="delimiter">: </span><span class="description">test whether an object contains at least n properties (own and inherited) which pass a test implemented by a predicate function.</span>
+
 </section>
 
 <!-- /.related -->
@@ -291,6 +300,18 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/object-any-in-by/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/object-any-in-by/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/utils/any-by]: https://github.com/stdlib-js/utils-any-by
+
+[@stdlib/object/any-own-by]: https://github.com/stdlib-js/object-any-own-by
+
+[@stdlib/object/every-in-by]: https://github.com/stdlib-js/object-every-in-by
+
+[@stdlib/object/some-in-by]: https://github.com/stdlib-js/object-some-in-by
+
+<!-- </related-links> -->
 
 </section>
 
