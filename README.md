@@ -45,38 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/object-any-in-by
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-anyInBy = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/object-any-in-by@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var anyInBy = require( 'path/to/vendor/umd/object-any-in-by/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/object-any-in-by@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.anyInBy;
-})();
-</script>
+var anyInBy = require( '@stdlib/object-any-in-by' );
 ```
 
 #### anyInBy( object, predicate\[, thisArg ] )
@@ -186,14 +180,9 @@ var mean = context.sum / context.count;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/object-any-in-by@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var anyInBy = require( '@stdlib/object-any-in-by' );
 
 function threshold( value ) {
     return ( value > 0.95 );
@@ -209,11 +198,6 @@ for ( i = 0; i < 100; i++ ) {
 
 bool = anyInBy( obj, threshold );
 // returns <boolean>
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -231,6 +215,15 @@ bool = anyInBy( obj, threshold );
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/utils-any-by`][@stdlib/utils/any-by]</span><span class="delimiter">: </span><span class="description">test whether at least one element in a collection passes a test implemented by a predicate function.</span>
+-   <span class="package-name">[`@stdlib/object-any-own-by`][@stdlib/object/any-own-by]</span><span class="delimiter">: </span><span class="description">test whether whether any 'own' property of a provided object satisfies a predicate function.</span>
+-   <span class="package-name">[`@stdlib/object-every-in-by`][@stdlib/object/every-in-by]</span><span class="delimiter">: </span><span class="description">test whether all properties (own and inherited) of an object pass a test implemented by a predicate function.</span>
+-   <span class="package-name">[`@stdlib/object-some-in-by`][@stdlib/object/some-in-by]</span><span class="delimiter">: </span><span class="description">test whether an object contains at least n properties (own and inherited) which pass a test implemented by a predicate function.</span>
 
 </section>
 
@@ -307,6 +300,18 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/object-any-in-by/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/object-any-in-by/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/utils/any-by]: https://github.com/stdlib-js/utils-any-by
+
+[@stdlib/object/any-own-by]: https://github.com/stdlib-js/object-any-own-by
+
+[@stdlib/object/every-in-by]: https://github.com/stdlib-js/object-every-in-by
+
+[@stdlib/object/some-in-by]: https://github.com/stdlib-js/object-some-in-by
+
+<!-- </related-links> -->
 
 </section>
 
